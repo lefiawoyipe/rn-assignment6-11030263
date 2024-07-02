@@ -8,7 +8,7 @@ import searchIcon from './Images/Search.png';
 import shoppingBagIcon from './Images/shoppingBag.png';
 import listViewIcon from './Images/Listview.png';
 import filterIcon from './Images/Filter.png';
-import addCircle from './Images/add_circle.png'; // Import the add_circle image
+import addCircle from './Images/add_circle.png'; 
 
 import dress1 from './Images/dress1.png';
 import dress2 from './Images/dress2.png';
@@ -67,7 +67,7 @@ const HomeScreen = ({ navigation }) => {
       <FlatList
         data={products}
         keyExtractor={(item) => item.id}
-        numColumns={2} // Add this line to display items side by side
+        numColumns={2} 
         renderItem={({ item }) => (
           <View style={styles.product}>
             <Image source={item.image} style={styles.productImage} />

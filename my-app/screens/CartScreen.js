@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import logo from './Images/Logo.png'; // Import the logo image
-import searchIcon from './Images/Search.png'; // Import the search image
-import removeIcon from './Images/remove.png'; // Import the remove image
+import logo from './Images/Logo.png'; 
+import searchIcon from './Images/Search.png'; 
+import removeIcon from './Images/remove.png'; 
 
 const CartScreen = ({ navigation }) => {
   const [cart, setCart] = useState([]);
@@ -35,7 +35,7 @@ const CartScreen = ({ navigation }) => {
       </View>
       <FlatList
         data={cart}
-        keyExtractor={(item, index) => `${item.id}-${index}`} // Ensure unique keys
+        keyExtractor={(item, index) => `${item.id}-${index}`} 
         renderItem={({ item }) => (
           <View style={styles.cartItem}>
             <Image source={item.image} style={styles.productImage} />
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     height: 30,
   },
   checkoutButton: {
-    backgroundColor: '#000', // Black background for the checkout button
+    backgroundColor: '#000', 
     padding: 10,
     borderRadius: 5,
     alignItems: 'center',
